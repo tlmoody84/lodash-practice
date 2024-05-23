@@ -1,12 +1,12 @@
 const _ = require("lodash");
 
-function deepCloneObject (object){
-    return _.deep(object)
+function deepCloneObject (object1){
+    return _.cloneDeep(object1);
  }
  
- function mergeObjects(objects){
-     return _.merge(objects)
+ function mergeObjects(object2, object1){
+     return _.merge(object2, object1);
   }
  
-  module.export = {deepCloneObject, mergeObjects}
+  module.exports = {deepCloneObject, mergeObjects}
 
